@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RFQ Search</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="homePage.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="homePage.js"></script>
+		
+</head>
+<body>
+	<h1>RFQ Search</h1>
+		</br>
+		<div id="search">
+		<div class="market">
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Market
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" id="tradeWeb">TW UST US RTS</a>
+				<a class="dropdown-item" id="bloomberg">BBG IRS US RTS</a>
+			</div>
+		</div>
+		</div>
+		
+		<div id="idSearch">
+			<input id="term" placeholder= "RFQ ID"/>
+			<button id="searchBtn">Search</button>
+		</div>
+		</div>
+		</br>	
+<a class="bbgMarket" id="nicePage487" href="ID_487/NicePage_487.html">link to NicePage_487</a> </br>
+<a class="bbgMarket" id="nicePage323" href="ID_323/NicePage_323.html">link to NicePage_323</a> </br>
+<a class="twMarket" id="nicePage344" href="TRSY_ID_344/NicePage_344.html">link to NicePage_344</a> </br>
+<a class="twMarket" id="nicePage1305" href="TRSY_ID_1305/NicePage_1305.html">link to NicePage_1305</a> </br>
+
+    <div class="container" id="container">
+        <div class="row text-center">
+            <h1> RFQ Analysis</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <table>
+                    <tr class="col-xs-3 col-sm-3">
+
+                        <!--rfq id-->
+                        <th>RFQ ID:</th>
+                        <!--negotiation time-->
+                        <th>receive time</th>
+                        <!--status-->
+                        <th>Status</th>
+                        <th>AQValue</th>
+                        <th>ANDealerValue</th>
+                        <th>RFQDealValu</th>
+                        <th>ANDefaultValue</th>
+                        <th>ANDealerMidValue</th>
+                        <th>CNELockOwner</th>
+                        <th>RFQDealGoodForTime</th>
+                        <th>RFQCoverPrice</th>
+                        <th>L1_ANDealerValue</th>
+                        <th>ANDealerMidSpread</th>
+                        <th>ANDealerMidSpreadPc</th>
+
+                    </tr>
+                    <tr>
+                        <td>alias tbd</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="col-xs-3 col-sm-3">
+                        <!--rfq id-->
+                        <td>20170803_HSBC_CAN_1</td>
+                        <!--negotiation time-->
+                        <td>13:20:26:255387 CMR4Q</td>
+                        <td>QuoteRequested</td>
+                        <td>25.400</td>
+                        <td>25.397 (25.397176617)</td>
+                        <td>25.400</td>
+                        <td>25.400</td>
+                        <td>25.397 (25.396553766)</td>
+                        <td>N/A</td>
+                        <td>15 sec</td>
+                        <td>-0.0</td>
+                        <td>-0.000</td>
+                        <td>0.003446234</td>
+                        <td>-0.0</td>
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:26:265525 CMR4Q</td>
+                        <td>update</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:32:605036 CMR4Q</td>
+                        <td>update</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:32:605700 CMR4Q</td>
+                        <td>update</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:32:720976 CMR4Q</td>
+                        <td>update</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:32:722854 *****</td>
+                        <td>on the wire</td>
+                        <td>25.400</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>3 sec</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:32:723270 CMR4Q</td>
+                        <td>update</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:36:285875 CMR4Q</td>
+                        <td>QuoteSubject</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:37:248207 CMR4Q</td>
+                        <td>CustAcceptedSubject</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:20:48:062774 CMR4Q</td>
+                        <td>QuoteRefreshRequested</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20170803_HSBC_CAN_1</td>
+                        <td>13:21:08:264819 CMR4Q</td>
+                        <td>DealerTimeOut</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            <ul>
+        <li class="dropdown" id="routing">
+            <a href="javascript:void(0)" class="dropbtn">Routing</a>
+            <div class="dropdown-content">
+                <p><a href=#>DealerBIC:</a></p>
+                <p><a href=#>LegalEntity:</a></p>
+                <p><a href=#>Trader: raju</a></p>
+                <p><a href=#>Interested logged-in traders: /raju</a></p>
+                <p><a href=#>Reserved by custom negotiation engine: 0 </a></p>
+            </div>
+        </li>
+        <li class="dropdown" id="priceConstruction">
+            <a href="javascript:void(0)" class="dropbtn">Price Construction</a>
+            <div class="dropdown-content">
+                <p><a href=#>Last quote to the market: 0 0.00000000 0.000</a></p>
+                <p><a href=#>Customer tier: -1</a></p>
+                <p><a href=#>Price mode: irreg settlement using T+n</a></p>
+                <p><a href=#>Bid or Ask price calculated by neg engine after markups (e.g. customer tier, irreg. settlement): 25.39717662</a></p>
+                <p><a href=#>Mid price calculated by neg engine after markups: 25.39655377</a></p>
+            </div>
+        </li>
+        <li class="dropdown" id="negotiationRules">
+            <a href="javascript:void(0)" class="dropbtn">Negotiation Rules</a>
+            <div class="dropdown-content">
+                <p><a href=#>ANCheckAQ: 1</a></p>
+                <p><a href=#>ANCommissionPct: 0.00000000</a></p>
+                <p><a href=#>ANDealerMidSpreadPct: 0.00000000</a></p>
+                <p><a href=#>ANDealerSpread: 0.00000000</a></p>
+                <p><a href=#>ANDealerUnderlyingMarkup: 0.00000000</a></p>
+                <p><a href=#>ANHitQtyReactionMin: 0.00000000</a></p>
+                <p><a href=#>ANMarkupFactorPct: 1.00000000</a></p>
+                <p><a href=#>ANMaxStrikeTolerance: 0.00000000</a></p>
+                <p><a href=#>ANMaxValue2ToleranceStatus: 0</a></p>
+                <p><a href=#>ANMinStrikeTolerance: 0.00000000</a></p>
+                <p><a href=#>ANMinValue2ToleranceStatus: 0</a></p>
+                <p><a href=#>ANQuoteSpread: 0.00000000</a></p>
+                <p><a href=#>ANValueType: 0</a></p>
+            </div>
+        </li>
+        <li class="dropdown" id="finalResponse">
+            <a href="javascript:void(0)" class="dropbtn">Final response to initial negotiation</a>
+            <div class="dropdown-content">
+                <p><a href=#>Action: None</a></p>
+                <p><a href=#>Trader: raju</a></p>
+                <p><a href=#>auto-accept reason: na</a></p>
+                <p><a href=#>auto-update reason: na</a></p>
+                <p><a href=#>auto-accept immediately reason: na</a></p>
+                <p><a href=#>auto-reject reason: Auto-Reject disabled for this Inquiry</a></p>
+                <p><a href=#>auto-reject gateway setup: Auto-reject disabled by configuration</a></p>
+                <p><a href=#>auto-reply reason: Instrument quote disabled</a></p>
+                <p><a href=#>Leg 0 Sell Price AN: 25.40000000 (25.39717662)</a></p>
+                <p><a href=#>CTS: (25.39717662 25.39717662) (IV25.39717662 T1 S0 BM0.000 L0.000 TM0.00000000 IM0.06228510) 1.000 AQRng(-100.000 999999.000)</a></p>
+                <p><a href=#>CMP: na na na 100.14000000</a></p>
+                <p><a href=#>V2: na na</a></p>
+                <p><a href=#>limit: 1</a></p>
+            </div>
+        </li>
+    </ul>
+    </div>
+<script src="homePage.js"></script>
+    </body>
+</html>
