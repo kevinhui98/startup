@@ -20,7 +20,7 @@
 			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Market
 			</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="change">
 				<a class="dropdown-item" id="tradeWeb">TW UST US RTS</a>
 				<a class="dropdown-item" id="bloomberg">BBG IRS US RTS</a>
 			</div>
@@ -29,19 +29,16 @@
 		
 		<div id="idSearch">
 			<input id="term" placeholder= "RFQ ID"/>
-			<button id="searchBtn">Search</button>
+			<button class="btn btn-primary" type="submit" id="searchBtn">Search</button>
 		</div>
 		</div>
 		</br>	
-<a class="bbgMarket" id="nicePage487" href="ID_487/NicePage_487.html">link to NicePage_487</a> </br>
+<a class="bbgMarket" id="nicePage487" href="ID_487/NicePage_487.html">link to NicePage_487</a> 
 <a class="bbgMarket" id="nicePage323" href="ID_323/NicePage_323.html">link to NicePage_323</a> </br>
-<a class="twMarket" id="nicePage344" href="TRSY_ID_344/NicePage_344.html">link to NicePage_344</a> </br>
+<a class="twMarket" id="nicePage344" href="TRSY_ID_344/NicePage_344.html">link to NicePage_344</a> 
 <a class="twMarket" id="nicePage1305" href="TRSY_ID_1305/NicePage_1305.html">link to NicePage_1305</a> </br>
 
     <div class="container" id="container">
-        <div class="row text-center">
-            <h1> RFQ Analysis</h1>
-        </div>
         <div class="row">
             <div class="col-md-4 text-center">
                 <table>
@@ -265,7 +262,7 @@
                 </table>
             </div>
         </div>
-            <ul>
+            <ul id="extraInfo">
         <li class="dropdown" id="routing">
             <a href="javascript:void(0)" class="dropbtn">Routing</a>
             <div class="dropdown-content">
@@ -324,6 +321,8 @@
         </li>
     </ul>
     </div>
+    </br>
+    <button type="button" class="btn btn-info" id="moreInfo">More</button>
 <script src="homePage.js"></script>
     </body>
 </html>
